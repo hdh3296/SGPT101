@@ -118,22 +118,27 @@ void Chk1800mvSetTemp(unsigned int Temp_mV)
 bit IsError(unsigned int Temp_mV)
 {
 
-    PIN_ERR_ALARM_LED = OFF_LED;
+    PIN_ERR_ALARM_LED_short = OFF_LED;
+	PIN_ERR_ALARM_LED_open = OFF_LED;
 
-    if (Temp_mV >= 4900)
+	// 쇼트 (short)
+	if (Temp_mV <= 100)
+	{
+		PIN_ERR_ALARM_LED_short = ON_LED;
+
+		return TRUE;
+	}
+
+	
+	// 단선 (open)
+    if (Temp_mV >= 4900)	
     {
-        PIN_ERR_ALARM_LED = ON_LED;
+        PIN_ERR_ALARM_LED_open = ON_LED;
 		
 		return TRUE;
     }
 	
-
-    if (Temp_mV <= 100)
-    {
-        PIN_ERR_ALARM_LED = ON_LED;
-
-		return TRUE;
-    }
+	
 
 	return FALSE;
 
@@ -345,6 +350,7 @@ void main(void)
 	PIN_HEATER_OUT	= OFF_RELAY;	
 
 	bPowerOn = TRUE;
+	
 	
 	
     while (1)

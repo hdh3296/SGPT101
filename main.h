@@ -3,7 +3,7 @@
 #define _MAIN_H_
 
 //#define __TEMP_1000		1
-#define	__TEMP_100		1
+#define	__TEMP_100		1	// PT-100옴 to Voltage(MCP-602),,,SGPT101 용 
 
 
 #define TRUE	1

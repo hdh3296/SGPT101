@@ -26,7 +26,8 @@ void InitPort(void)
 	
 	TRIS_PIN_HEATER_OUT 	= 0;
 	TRIS_PIN_HEATER_LED 	= 0;	
-	TRIS_PIN_ERR_ALARM_LED	= 0;	
+	TRIS_PIN_ERR_ALARM_LED_short	= 0;	
+	TRIS_PIN_ERR_ALARM_LED_open	= 0;
 
 
 	// 핀 값 설정 
@@ -40,7 +41,8 @@ void InitPort(void)
 	
 	PIN_HEATER_OUT			= OFF_RELAY;	
 	PIN_HEATER_LED			= OFF_LED;	
-	PIN_ERR_ALARM_LED		= OFF_LED;	
+	PIN_ERR_ALARM_LED_short		= OFF_LED;	
+	PIN_ERR_ALARM_LED_open		= OFF_LED;
 }
 
 void  InitTMR0_REGISTER(void)

@@ -34,16 +34,20 @@
 #define PIN_HEATER_LED			RB5 // 히터 상태 LED 
 #define TRIS_PIN_HEATER_LED		TRISB5
 
-#define PIN_ERR_ALARM_LED 		RB6		// PGC , 고장 알람 LED 
-#define TRIS_PIN_ERR_ALARM_LED 	TRISB6
+#define PIN_ERR_ALARM_LED_short 			RB6		// PGC , 고장 알람 LED : short
+#define TRIS_PIN_ERR_ALARM_LED_short 		TRISB6
+
+#define PIN_ERR_ALARM_LED_open 				RB7		// PGD , 고장 알람 LED : open
+#define TRIS_PIN_ERR_ALARM_LED_open 		TRISB7
+
 
 /////////////////////////////////////////////////////////////////////////////////////
 
 #define TRUE	1
 #define FALSE 	0
 
-#define ON_RELAY	0
-#define OFF_RELAY	1
+#define ON_RELAY	1
+#define OFF_RELAY	0
 
 #define ON_LED		0
 #define OFF_LED		1
