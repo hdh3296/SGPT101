@@ -1,0 +1,7 @@
+
+2017.06.07 개발 시작
+
+  기존 pt1000 프로젝트를 복사하여 프로젝트 생성 
+  Pt1000 프로젝트 총정리 에버노트 : http://www.evernote.com/l/ANGi0QbShMRIib5aQcvJMC0xR9RofvCP5-o/
+   
+  
