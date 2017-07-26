@@ -159,44 +159,44 @@ bit GetOnOffTemp(unsigned int nBCD,
 	switch (nBCD)
 	{
 	case	0:
-		*OnTemp	 = T25;
-		*OffTemp = T30;
-		break;
-	case	1:
-		*OnTemp	 = T26;
-		*OffTemp = T31;
-		break;
-	case	2:
 		*OnTemp	 = T27;
 		*OffTemp = T32;
 		break;
+	case	1:
+		*OnTemp	 = T19;
+		*OffTemp = T29;
+		break;
+	case	2:
+		*OnTemp	 = T20;
+		*OffTemp = T30;
+		break;
 	case	3:
-		*OnTemp	 = T28;
-		*OffTemp = T33;
+		*OnTemp	 = T21;
+		*OffTemp = T31;
 		break;
 	case	4:
-		*OnTemp	 = T29;
-		*OffTemp = T34;
+		*OnTemp	 = T22;
+		*OffTemp = T32;
 		break;
 	case	5:
-		*OnTemp	 = T30;
-		*OffTemp = T35;
+		*OnTemp	 = T23;
+		*OffTemp = T33;
 		break;
 	case	6:
-		*OnTemp	 = T31;
-		*OffTemp = T36;
+		*OnTemp	 = T24;
+		*OffTemp = T34;
 		break;
 	case	7:
-		*OnTemp	 = T32;
-		*OffTemp = T37;
+		*OnTemp	 = T25;
+		*OffTemp = T35;
 		break;
 	case	8:
-		*OnTemp	 = T33;
-		*OffTemp = T38;
+		*OnTemp	 = T26;
+		*OffTemp = T36;
 		break;
 	case	9:
-		*OnTemp	 = T34;
-		*OffTemp = T39;
+		*OnTemp	 = T27;
+		*OffTemp = T37;
 		break;
 	default:			
 		return	FALSE;

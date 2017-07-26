@@ -43,8 +43,9 @@ bit bPowerOn;
 	} tag_TempValueDef;
 
 
-#elif defined(__TEMP_100)
+#elif defined(__TEMP_100) 
 	typedef enum{
+		T19 = 2106, T20 = 2136,
 		T21 = 2167,	T22 = 2197,	T23 = 2228,	T24 = 2258, T25 = 2288,
 		T26 = 2318, T27 = 2349,	T28 = 2379,	T29 = 2410,	T30 = 2439,
 		T31 = 2470, T32 = 2500,	T33 = 2530,	T34 = 2560,	T35 = 2590,
